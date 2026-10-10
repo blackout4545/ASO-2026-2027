@@ -38,8 +38,7 @@ Un treballador és la persona (Laia Macias). Un departament és el grup on treba
 
 Hi ha persones que, pel seu càrrec o funció, necessiten accessos diferents dels altres membres del seu departament?
 
-☑ Sí  
-☐ No
+☐ Sí  
 
 Posa'n algun exemple:
 
@@ -226,9 +225,8 @@ A partir de l'organització de l'empresa, proposa els primers conjunts de person
 Laia treballa al departament d'Administració, però també és la responsable del departament.
 
 És suficient que pertanyi només al conjunt `Administració`?
-
-☐ Sí  
-☑ No
+  
+☐ No
 
 Per què?
 
@@ -250,8 +248,7 @@ Campanya Estiu
 
 Creus que hauríem de canviar-les de departament?
 
-☐ Sí  
-☑ No
+☐ No
 
 Si no, com podríem donar-los accés als recursos del projecte?
 
@@ -311,9 +308,7 @@ Imagina que demà MusicCloud passa de 14 treballadors a 500.
 
 Quina de les dues estratègies consideres més adequada?
 
-☐ Assignar permisos individualment a cada usuari.
-
-☑ Organitzar els usuaris segons les seves necessitats i assignar permisos a aquests conjunts.
+☐ Organitzar els usuaris segons les seves necessitats i assignar permisos a aquests conjunts.
 
 Justifica la resposta.
 
