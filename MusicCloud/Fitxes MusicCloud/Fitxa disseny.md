@@ -62,13 +62,13 @@ Indica quina opció utilitzaries principalment en cada cas.
 
 | Necessitat | OU | Grup |
 |---|:-:|:-:|
-| Organitzar els treballadors d'Administració | ☑ | ☐ |
-| Donar accés a la carpeta d'Administració | ☐ | ☑ |
-| Organitzar els ordinadors clients | ☑ | ☐ |
-| Identificar les persones que participen en Campanya Estiu | ☐ | ☑ |
-| Organitzar els servidors | ☑ | ☐ |
-| Donar privilegis als administradors del sistema | ☐ | ☑ |
-| Organitzar els comptes utilitzats per aplicacions | ☑ | ☐ |
+| Organitzar els treballadors d'Administració | ☐ |  |
+| Donar accés a la carpeta d'Administració |  | ☐ |
+| Organitzar els ordinadors clients | ☐ |  |
+| Identificar les persones que participen en Campanya Estiu |  | ☐ |
+| Organitzar els servidors | ☐ |  |
+| Donar privilegis als administradors del sistema |  | ☐ |
+| Organitzar els comptes utilitzats per aplicacions | ☐ |  |
 
 ### Explica amb les teves paraules la diferència principal entre una OU i un grup.
 
@@ -135,10 +135,10 @@ Indica si les afirmacions són certes o falses.
 
 | Afirmació | C | F |
 |---|:-:|:-:|
-| LDAP és sinònim d'Active Directory | ☐ | ☑ |
-| LDAP permet accedir i consultar informació d'un directori | ☑ | ☐ |
-| OpenLDAP és una implementació d'un servei de directori | ☑ | ☐ |
-| Active Directory utilitza LDAP, entre altres tecnologies | ☑ | ☐ |
+| LDAP és sinònim d'Active Directory |  | ☐ |
+| LDAP permet accedir i consultar informació d'un directori | ☐ |  |
+| OpenLDAP és una implementació d'un servei de directori | ☐ |  |
+| Active Directory utilitza LDAP, entre altres tecnologies | ☐ |  |
 
 ---
 
