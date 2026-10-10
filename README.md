@@ -10,7 +10,6 @@ Tambe recull les practiques de PowerShell del modul.
  
 ## Contingut
 - MusicCloud;
-    - Informacio empresa MusicCloud: dades de l'empresa, departaments, treballadors, perfils d'usuari i estructura de carpetes.
     - Fitxes MusicCloud:
         - Fitxa 1 - Analisi inicial de MusicCloud
         - Fitxa 2 - Organitzacio del servei de directori de MusicCloud
