@@ -15,3 +15,4 @@ Tambe recull les practiques de PowerShell del modul.
         - Fitxa 2 - Organitzacio del servei de directori de MusicCloud
 
 - Powershell: practiques de PowerShell sobre fitxers i carpetes, variables, tipus de dades, arrays i pipeline.
+- San afaxit més practiques de PowerShell; Select-Object i Where-Object, Estructures de control i Scripts.
