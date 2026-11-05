@@ -7,12 +7,12 @@ $fitxersMesGrans = Get-ChildItem -File |
     Sort-Object Length -Descending |
     Select-Object -First 5 Name, Length
 
-Write-Host "===== ANÀLISI DE LA CARPETA ====="
+Write-Host "===== ANALISI DE LA CARPETA ====="
 Write-Host ""
 Write-Host "Carpeta: $(Get-Location).Path"
 Write-Host "Nombre total d'elements: $totalElements"
 Write-Host ""
-Write-Host "Els cinc fitxers més grans:"
+Write-Host "Els cinc fitxers mes grans:"
 
 foreach ($fitxer in $fitxersMesGrans) {
     Write-Host "$($fitxer.Name) - $($fitxer.Length) bytes"
