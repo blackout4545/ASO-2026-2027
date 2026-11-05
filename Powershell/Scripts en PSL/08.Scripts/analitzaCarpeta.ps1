@@ -12,5 +12,8 @@ Write-Host ""
 Write-Host "Carpeta: $(Get-Location).Path"
 Write-Host "Nombre total d'elements: $totalElements"
 Write-Host ""
-Write-Host "Els cinc fitxers mes grans (mida en bytes):"
-$fitxersMesGrans | Format-Table -AutoSize | Out-Host
+Write-Host "Els cinc fitxers més grans:"
+
+foreach ($fitxer in $fitxersMesGrans) {
+    Write-Host "$($fitxer.Name) - $($fitxer.Length) bytes"
+}
