@@ -1,45 +1,46 @@
 # =====================
 # PROCESSOS
 # =====================
+# Els 5 processos amb mes CPU
 $processos = Get-Process
+$topProcessos = $processos | Sort-Object CPU -Descending | Select-Object -First 5 Name, Id, CPU
 
 Write-Host "===== PROCESSOS ====="
-Write-Host "Els cinc processos amb mes CPU:"
-$processos |
-    Sort-Object CPU -Descending |
-    Select-Object -First 5 Name, Id, CPU |
-    Format-Table -AutoSize |
-    Out-Host
-
+foreach ($proces in $topProcessos) {
+    Write-Host "Name: $($proces.Name)"
+    Write-Host "Id: $($proces.Id)"
+    Write-Host "CPU: $($proces.CPU)"
+    Write-Host "---------------"
+}
+Write-Host ""
 
 # =====================
 # SERVEIS
 # =====================
 $serveis = Get-Service
-$totalServeis = $serveis.Count
 $serveisEnExecucio = ($serveis | Where-Object { $_.Status -eq 'Running' }).Count
-$serveisNoExecutats = $totalServeis - $serveisEnExecucio
+$serveisNoExecutats = ($serveis | Where-Object { $_.Status -ne 'Running' }).Count
 
 Write-Host "===== SERVEIS ====="
-Write-Host "Total de serveis: $totalServeis"
+Write-Host "Total de serveis: $($serveis.Count)"
 Write-Host "Serveis en execucio: $serveisEnExecucio"
 Write-Host "Serveis no executats: $serveisNoExecutats"
 Write-Host ""
 
-
 # =====================
 # FITXERS
 # =====================
-$fitxers = Get-ChildItem -File
+# Nomes fitxers (les carpetes no tenen mida)
+$fitxers = Get-ChildItem | Where-Object { -not $_.PSIsContainer }
+$fitxersGrans = $fitxers | Sort-Object Length -Descending | Select-Object -First 3 Name, Length
 
 Write-Host "===== FITXERS ====="
-Write-Host "Els tres fitxers mes grans de la carpeta actual:"
-$fitxers |
-    Sort-Object Length -Descending |
-    Select-Object -First 3 Name, Length |
-    Format-Table -AutoSize |
-    Out-Host
-
+foreach ($fitxer in $fitxersGrans) {
+    Write-Host "Name: $($fitxer.Name)"  
+    Write-Host "Length: $($fitxer.Length)"
+    Write-Host "-------------------------"
+}
+Write-Host ""
 
 # =====================
 # RESUM
@@ -47,5 +48,5 @@ $fitxers |
 Write-Host "===== RESUM ====="
 Write-Host ""
 Write-Host "Processos analitzats: $($processos.Count)"
-Write-Host "Serveis analitzats: $totalServeis"
+Write-Host "Serveis analitzats: $($serveis.Count)"
 Write-Host "Fitxers analitzats: $($fitxers.Count)"
